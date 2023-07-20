@@ -148,4 +148,5 @@ Feedstock Maintainers
 =====================
 
 * [@Ubadub](https://github.com/Ubadub/)
+* [@sobolevn](https://github.com/sobolevn/)
 
