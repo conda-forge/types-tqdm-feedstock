@@ -1,5 +1,5 @@
 {% set name = "types-tqdm" %}
-{% set version = "4.66.0.20240417" %}
+{% set version = "4.67.0.20241119" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 16dce9ef522ea8d40e4f5b8d84dd8a1166eefc13ceee7a7e158bf0f1a1421a31
+  sha256: 1769e0e94d5e6d8fa814965f9cf3d9928376dd15dabcbcb784bb8769081092b4
 
 build:
   noarch: python
@@ -18,8 +18,10 @@ requirements:
   host:
     - python >=3.7
     - pip
+    - setuptools
   run:
     - python >=3.7
+    - types-requests
 
 test:
   commands:
