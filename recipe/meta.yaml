@@ -1,4 +1,5 @@
 {% set name = "types-tqdm" %}
+{% set python_min = "3.8" %}
 {% set version = "4.67.0.20241221" %}
 
 package:
