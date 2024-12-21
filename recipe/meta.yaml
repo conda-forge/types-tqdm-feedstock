@@ -1,13 +1,13 @@
 {% set name = "types-tqdm" %}
-{% set version = "4.67.0.20241119" %}
+{% set version = "4.67.0.20241221" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 1769e0e94d5e6d8fa814965f9cf3d9928376dd15dabcbcb784bb8769081092b4
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name.replace('-', '_') }}-{{ version }}.tar.gz
+  sha256: e56046631056922385abe89aeb18af5611f471eadd7918a0ad7f34d84cd4c8cc
 
 build:
   noarch: python
