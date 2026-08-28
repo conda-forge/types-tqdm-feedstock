@@ -1,14 +1,14 @@
 {% set name = "types-tqdm" %}
 {% set python_min = "3.10" %}
-{% set version = "4.70.0.20260805" %}
+{% set version = "4.70.0.20260827" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name.replace('-', '_') }}-{{ version }}.tar.gz
-  sha256: 569efd0fd8b2a460e6e6548634ec253c1362ed8907f8b0daacf0a07eab204a26
+  url: https://files.pythonhosted.org/packages/source/{{ name[0] }}/{{ name }}/{{ name.replace('-', '_') }}-{{ version }}.tar.gz
+  sha256: d3efd69243ac9093c552f1c0d081b77286d61ace96b6899a142542555bdad2dc
 
 build:
   noarch: python
